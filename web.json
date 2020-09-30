@@ -1,0 +1,23 @@
+[
+   {
+      "string": "kucing",
+      "integer": "5",
+      "float": "57",
+      "date": "2020-09-12",
+      "boolean": "True"
+   },
+   {
+      "string": "sugar",
+      "integer": "5",
+      "float": "8",
+      "date": "2020-09-12",
+      "boolean": "True"
+   },
+   {
+      "string": "kuda",
+      "integer": "9",
+      "float": "8",
+      "date": "2020-09-17",
+      "boolean": "True"
+   }
+]

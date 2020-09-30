@@ -1,0 +1,43 @@
+<%- include('partials/header') %>
+<h5><b>Data List</b></h5>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>String</th>
+            <th>Integer</th>
+            <th>Float</th>
+            <th>Date</th>
+            <th>Boolean</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% data.forEach((item, index) => { %>
+        <tr>
+            <td><%= index + 1 %></td>
+            <td><%= item.string%></td>
+            <td><%= item.integer%></td>
+            <td><%= item.float%></td>
+            <td><%= item.date%></td>
+            <td><%= item.boolean%></td>
+            <td>
+                <a href="/edit/<%= index %>" class="btn btn-dark">Edit</a>
+                <a href="/delete/<%= index %>" class="btn btn-dark">Delete</a>
+            </td>
+        </tr>
+        <% }) %>
+    </tbody>
+</table>
+<nav aria-label="Page navigation example">
+    <ul class="pagination pagination-sm">
+        <li class="page-item"><a class="page-link" href="/page">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="/page">1</a></li>
+        <li class="page-item"><a class="page-link" href="/page">2</a></li>
+        <li class="page-item"><a class="page-link" href="/page">3</a></li>
+        <li class="page-item"><a class="page-link" href="/page">Next</a></li>
+    </ul>
+</nav>
+<a href="/add" class="btn btn-dark">Add</a>
+
+<%- include('partials/footer') %>
